@@ -51,27 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
 // Karten laden mittels AJAX
     // Загрузка карт через AJAX
     const loadCards = () => {
-    const selectedDeck = deckSelect.value; 
-    console.log('Selected deck:', selectedDeck); // Проверяем, что deckSelect работает корректно
-    const xhr = new XMLHttpRequest();
+        const selectedDeck = deckSelect.value; 
 
-    xhr.open('GET', `/memorygame/assets/${selectedDeck}.json`, true);
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            const data = JSON.parse(xhr.responseText);
-            cards = createCards(data.cards, pairCount);
-            gameContainer.innerHTML = '';
-            startTime = Date.now();
-            displayCards(cards);
-        } else {
-            console.error(`Ошибка загрузки файла: ${xhr.statusText}`);
-        }
+        console.log(selectedDeck);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('GET', `/memorygame/assets/${selectedDeck}.json`, true);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                cards = createCards(data.cards, pairCount);
+                gameContainer.innerHTML = '';
+                startTime = Date.now();
+                displayCards(cards);
+            }
+        };
+        xhr.send();
     };
-    xhr.onerror = function () {
-        console.error('Ошибка при попытке загрузить файл');
-    };
-    xhr.send();
-};
 
 
 // Erstellen der Kartenpaare
