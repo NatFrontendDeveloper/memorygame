@@ -213,6 +213,42 @@ tr:hover {
     }
 }
 
+/* Medienabfragen für mobile Geräte */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Vertikale Anordnung auf mobilen Geräten */
+        gap: 1rem;
+    }
+
+    .game-area {
+        flex: 0 0 100%; /* Das Spielgebiet nimmt die gesamte Breite ein */
+    }
+
+    .sidebar {
+        flex: 0 0 100%; /* Die Seitenleiste nimmt die gesamte Breite ein */
+        order: 1; /* На мобильных устройствах отображается после игровых карт */
+    }
+
+    .card {
+        width: 120px; /* Verkleinerung der Kartengröße */
+        height: 200px; /* Verkleinerung der Kartenhöhe */
+        font-size: 1.5em; /* Verkleinerung der Schriftgröße auf den Karten */
+    }
+
+    .controls {
+        font-size: 1em; /* Verkleinerung der Schriftgröße der Steuerelemente */
+    }
+
+    .controls select {
+        font-size: 0.9em; /* Verkleinerung der Schriftgröße im Auswahlfeld */
+    }
+
+    .controls button {
+        font-size: 1em; /* Verkleinerung der Schriftgröße der Schaltfläche */
+        padding: 8px 15px; /* Verkleinerung der Innenabstände der Schaltfläche */
+    }
+}
+
 @media (max-width: 480px) {
     .card {
         width: 100px; /* Weitere Verkleinerung der Kartengröße */
