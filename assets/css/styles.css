@@ -185,3 +185,45 @@ tr:hover {
 .close:hover {
     color: #000;
 }
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Размещаем блоки друг под другом */
+        gap: 1rem;
+    }
+
+    .game-area {
+        flex: 1 1 100%; /* Игровая область на весь экран */
+    }
+
+    .sidebar {
+        flex: 1 1 100%; /* Боковая панель на весь экран */
+        margin-top: 20px;
+    }
+
+    #memory-game {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+
+    .card {
+        flex: 0 1 22%; /* Карты занимают 22% ширины контейнера (4 в строке) */
+        height: 180px; /* Уменьшаем высоту карт */
+        font-size: 1.2em; /* Уменьшаем шрифт */
+    }
+
+    .controls {
+        flex-direction: column;
+        width: 100%; /* Элементы управления по одному */
+    }
+
+    .controls select, .controls button {
+        width: 100%; /* Элементы управления на всю ширину */
+        margin-bottom: 10px;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+}
