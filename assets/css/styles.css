@@ -1,17 +1,16 @@
-
-body, html{
+body, html {
     margin: 0;
     padding: 0;
-    max-width: 100%; 
+    max-width: 100%;
 }
+
 header {
-   
-    text-align: center; /* Заголовок по центру */
+    text-align: center; /* Überschrift zentrieren */
 }
 
 .controls {
     margin-bottom: 20px;
-    text-align: center; /* Центрируем элементы управления */
+    text-align: center; /* Steuerelemente zentrieren */
     line-height: 48px;
 }
 
@@ -21,58 +20,58 @@ header {
 }
 
 .controls select {
-    font-size: 1em; /* Размер шрифта для селекта */
-    padding: 5px; /* Отступы внутри селекта */
-    border-radius: 5px; /* Скругление углов */
-    border: 1px solid #016e9f; /* Цвет границы */
-    outline: none; /* Убираем обводку при фокусе */
-    transition: border-color 0.3s; /* Плавный переход цвета границы */
+    font-size: 1em; /* Schriftgröße für das Auswahlfeld */
+    padding: 5px; /* Innenabstände des Auswahlfeldes */
+    border-radius: 5px; /* Abgerundete Ecken */
+    border: 1px solid #016e9f; /* Randfarbe */
+    outline: none; /* Entfernt den Fokusrahmen */
+    transition: border-color 0.3s; /* Sanfte Übergangsfarbe des Rahmens */
 }
 
 .controls select:focus {
-    border-color: #48c774; /* Цвет границы при фокусе */
+    border-color: #48c774; /* Rahmenfarbe bei Fokus */
 }
 
 .controls button {
-    font-size: 1.2em; /* Размер шрифта для кнопки */
-    padding: 10px 20px; /* Отступы внутри кнопки */
-    background-color: #016e9f; /* Цвет фона кнопки */
-    color: #fff; /* Цвет текста кнопки */
-    border: none; /* Убираем границу */
-    border-radius: 5px; /* Скругление углов кнопки */
-    cursor: pointer; /* Курсор при наведении */
-    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    font-size: 1.2em; /* Schriftgröße für die Schaltfläche */
+    padding: 10px 20px; /* Innenabstände der Schaltfläche */
+    background-color: #016e9f; /* Hintergrundfarbe der Schaltfläche */
+    color: #fff; /* Textfarbe der Schaltfläche */
+    border: none; /* Entfernt den Rand */
+    border-radius: 5px; /* Abgerundete Ecken der Schaltfläche */
+    cursor: pointer; /* Cursor bei Hover */
+    transition: background-color 0.3s; /* Sanfter Übergang der Hintergrundfarbe */
 }
 
 .controls button:hover {
-    background-color: #026b9a; /* Цвет фона при наведении */
+    background-color: #026b9a; /* Hintergrundfarbe bei Hover */
 }
 
 .main-container {
     max-width: 1200px;
-
     display: flex;
-    justify-content: space-between; /* Разделяет игровую область и статистику */
-margin:0 20px;
+    justify-content: space-between; /* Trennt das Spielgebiet und die Statistik */
+    margin: 0 20px;
     gap: 2rem;
 }
-.game-area{
+
+.game-area {
     flex: 0 0 70%;
 }
-.sidebar{
+
+.sidebar {
     flex: 0 0 30%;
 }
 
 #memory-game {
-    display: flex; /* Включаем Flexbox */
-    flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку */
-    gap: 10px; /* Отступ между элементами */}
+    display: flex; /* Flexbox aktivieren */
+    flex-wrap: wrap; /* Erlaubt den Umbruch der Elemente in die nächste Zeile */
+    gap: 10px; /* Abstand zwischen den Elementen */
+}
 
 .card {
-    flex: 0 1 150px; /* Элементы имеют минимальную ширину 120px, могут расти и сжиматься */
-   
-  
-    text-align: center; /* Выравнивание текста по центру */
+    flex: 0 1 150px; /* Die Elemente haben eine minimale Breite von 120px, können aber wachsen und schrumpfen */
+    text-align: center; /* Text zentrieren */
     width: 150px;
     height: 250px;
     background-color: #016e9f;
@@ -82,35 +81,28 @@ margin:0 20px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
-    border-radius: 10px; /* Скругление углов карт */
-    
-    transition: width 0.3s, height 0.3s; /* Плавный переход для изменения размера */
-    background-size: cover; /* Уменьшает изображение до размеров блока */
-    background-position: center; /* Центрирует изображение внутри блока */
-    background-repeat: no-repeat; /* Отключает повторение изображения */
+    border-radius: 10px; /* Abgerundete Ecken der Karten */
+    transition: width 0.3s, height 0.3s; /* Sanfter Übergang der Größe */
+    background-size: cover; /* Bildgröße an die Blockgröße anpassen */
+    background-position: center; /* Bild im Block zentrieren */
+    background-repeat: no-repeat; /* Bildwiederholung deaktivieren */
 }
-
 
 .card.matched {
     transition: transform 0.5s;
-    
     transform: scale(0.9);
-    opacity: 0; 
-
+    opacity: 0;
 }
 
 .card:hover {
     background-color: #026b9a;
-    /* transform: rotateY(180deg); /* Поворот на 180 градусов по оси Y */
-    /* transition: transform 0.3s; */ 
 }
 
 .sidebar {
     margin-top: 20px;
     background-color: #e9e9e9;
     padding: 10px;
-    max-width: 220px; /* Ширина боковой панели */
+    max-width: 220px; /* Maximale Breite der Seitenleiste */
     border-radius: 5px;
 }
 
@@ -119,8 +111,9 @@ margin:0 20px;
 }
 
 .sidebar p {
-    font-size: 1.1em; /* Увеличение размера текста для статистики */
+    font-size: 1.1em; /* Erhöhte Schriftgröße für die Statistik */
 }
+
 .sidebar {
     padding: 20px;
     background-color: #f0f0f0;
@@ -149,9 +142,10 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
-/* Основной стиль модального окна */
+
+/* Grundstil für das modale Fenster */
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none; /* Standardmäßig ausgeblendet */
     position: fixed;
     top: 0;
     left: 0;
@@ -162,7 +156,7 @@ tr:hover {
     align-items: center;
 }
 
-/* Стиль для контента внутри модального окна */
+/* Stil für den Inhalt des modalen Fensters */
 .modal-content {
     background-color: #fff;
     padding: 20px;
@@ -172,10 +166,8 @@ tr:hover {
     text-align: center;
 }
 
-
 .close {
     position: relative;
-
     font-size: 24px;
     color: #aaa;
     cursor: pointer;
@@ -184,4 +176,56 @@ tr:hover {
 
 .close:hover {
     color: #000;
+}
+
+/* Medienabfragen für mobile Geräte */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Vertikale Anordnung auf mobilen Geräten */
+        gap: 1rem;
+    }
+
+    .game-area {
+        flex: 0 0 100%; /* Das Spielgebiet nimmt die gesamte Breite ein */
+    }
+
+    .sidebar {
+        flex: 0 0 100%; /* Die Seitenleiste nimmt die gesamte Breite ein */
+    }
+
+    .card {
+        width: 120px; /* Verkleinerung der Kartengröße */
+        height: 200px; /* Verkleinerung der Kartenhöhe */
+        font-size: 1.5em; /* Verkleinerung der Schriftgröße auf den Karten */
+    }
+
+    .controls {
+        font-size: 1em; /* Verkleinerung der Schriftgröße der Steuerelemente */
+    }
+
+    .controls select {
+        font-size: 0.9em; /* Verkleinerung der Schriftgröße im Auswahlfeld */
+    }
+
+    .controls button {
+        font-size: 1em; /* Verkleinerung der Schriftgröße der Schaltfläche */
+        padding: 8px 15px; /* Verkleinerung der Innenabstände der Schaltfläche */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100px; /* Weitere Verkleinerung der Kartengröße */
+        height: 180px; /* Weitere Verkleinerung der Kartenhöhe */
+        font-size: 1.2em; /* Weitere Verkleinerung der Schriftgröße auf den Karten */
+    }
+
+    .controls select {
+        font-size: 0.8em; /* Weitere Verkleinerung der Schriftgröße im Auswahlfeld */
+    }
+
+    .controls button {
+        font-size: 1em; /* Weitere Verkleinerung der Schriftgröße der Schaltfläche */
+        padding: 6px 12px; /* Weitere Verkleinerung der Innenabstände der Schaltfläche */
+    }
 }
