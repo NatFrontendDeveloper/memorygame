@@ -7,13 +7,15 @@ body, html {
 }
 
 header {
-    text-align: center; /* Заголовок по центру */
-    padding: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #016e9f;
+    color: white;
 }
 
 .controls {
     margin-bottom: 20px;
-    text-align: center; /* Центрируем элементы управления */
+    text-align: center;
     line-height: 48px;
 }
 
@@ -24,30 +26,30 @@ header {
 
 .controls select,
 .controls button {
-    font-size: 1em; /* Размер шрифта */
-    padding: 10px 15px; /* Отступы */
+    font-size: 1em;
+    padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid #016e9f; /* Цвет границы */
-    background-color: #016e9f; /* Цвет фона */
-    color: #fff; /* Цвет текста */
+    border: 1px solid #016e9f;
+    background-color: #016e9f;
+    color: #fff;
     cursor: pointer;
-    outline: none; /* Убираем обводку */
-    margin: 5px;
-    width: 100%; /* Ширина 100% для адаптивности */
+    outline: none;
+    width: 100%;
+    margin: 5px 0;
 }
 
 .controls button {
-    background-color: #016e9f; /* Цвет фона кнопки */
+    background-color: #016e9f;
 }
 
 .controls button:hover {
-    background-color: #026b9a; /* Цвет фона при наведении */
+    background-color: #026b9a;
 }
 
 .main-container {
     max-width: 100%;
     display: flex;
-    flex-direction: column; /* Вертикальное расположение на мобильных устройствах */
+    flex-direction: column;
     gap: 20px;
     margin: 0 10px;
 }
@@ -60,7 +62,7 @@ header {
 }
 
 .card {
-    width: 48%; /* Уменьшаем размер карт, чтобы они помещались на экране */
+    width: 48%;
     height: 200px;
     background-color: #016e9f;
     color: #fff;
@@ -158,14 +160,14 @@ tr:hover {
 /* Мобильная версия */
 @media (max-width: 480px) {
     .game-area {
-        flex-direction: column; /* Карты размещаются в столбик */
+        flex-direction: column;
         gap: 15px;
     }
 
     .card {
-        width: 100%; /* Карты занимают всю ширину экрана */
-        height: 180px; /* Уменьшаем высоту карт */
-        font-size: 1.5em; /* Уменьшаем размер шрифта на картах */
+        width: 100%;
+        height: 180px;
+        font-size: 1.5em;
     }
 
     .controls {
@@ -174,7 +176,7 @@ tr:hover {
 
     .controls select,
     .controls button {
-        width: 100%; /* Ширина 100% для управления */
+        width: 100%;
     }
 
     .sidebar {
@@ -195,7 +197,7 @@ tr:hover {
 /* Десктопная версия */
 @media (min-width: 768px) {
     .main-container {
-        flex-direction: row; /* Горизонтальное расположение на большем экране */
+        flex-direction: row;
     }
 
     .game-area {
@@ -208,7 +210,7 @@ tr:hover {
     }
 
     .card {
-        width: 150px; /* Больше карт на экране */
+        width: 150px;
         height: 250px;
     }
 
@@ -218,7 +220,7 @@ tr:hover {
 
     .controls select,
     .controls button {
-        width: auto; /* Ширина не 100% для десктопа */
+        width: auto;
     }
 
     .sidebar h2 {
