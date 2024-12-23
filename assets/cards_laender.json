@@ -1,0 +1,17 @@
+{
+    "cards": [
+      { "image": "/assets/img/laender/a7.jpg", "number": "1" },
+      { "image": "/assets/img/laender/b2_small.jpg", "number": "2" },
+      { "image": "/assets/img/laender/b6_small.jpg", "number": "3" },
+      { "image": "/assets/img/laender/l1.jpg", "number": "4" },
+      { "image": "/assets/img/laender/l4_small.jpg", "number": "5" },
+      { "image": "/assets/img/laender/m1_small.jpg", "number": "6" },
+      { "image": "/assets/img/laender/m2_small.jpg", "number": "7" },
+      { "image": "/assets/img/laender/p3_small.jpg", "number": "8" },
+      { "image": "/assets/img/laender/p6_small.jpg", "number": "9" },
+      { "image": "/assets/img/laender/sch6_small.jpg", "number": "10" },
+      { "image": "/assets/img/laender/t3.jpg", "number": "11" },
+      { "image": "/assets/img/laender/t4.jpg", "number": "12" }
+    ]
+  }
+  

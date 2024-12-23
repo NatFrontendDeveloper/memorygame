@@ -1,0 +1,17 @@
+{
+    "cards": [
+      { "image": "/assets/img/h10.jpg", "number": "1" },
+      { "image": "/assets/img/h18.jpg", "number": "2" },
+      { "image": "/assets/img/h9.jpg", "number": "3" },
+      { "image": "/assets/img/it23.jpg", "number": "4" },
+      { "image": "/assets/img/it24.jpg", "number": "5" },
+      { "image": "/assets/img/k1.jpg", "number": "6" },
+      { "image": "/assets/img/k4.jpg", "number": "7" },
+      { "image": "/assets/img/n23.jpg", "number": "8" },
+      { "image": "/assets/img/n5.jpg", "number": "9" },
+      { "image": "/assets/img/r33.jpg", "number": "10" },
+      { "image": "/assets/img/v5.jpg", "number": "11" },
+      { "image": "url_to_animal_image_12", "number": "12" }
+    ]
+  }
+  

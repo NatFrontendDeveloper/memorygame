@@ -1,0 +1,16 @@
+{
+  "cards": [
+    { "image": "/assets/img/f1.jpg", "number": "1" },
+    { "image": "/assets/img/f2.jpg", "number": "2" },
+    { "image": "/assets/img/f3.jpg", "number": "3" },
+    { "image": "/assets/img/f4.jpg", "number": "4" },
+    { "image": "/assets/img/f5.jpg", "number": "5" },
+    { "image": "/assets/img/f6.jpg", "number": "6" },
+    { "image": "/assets/img/f7.jpg", "number": "7" },
+    { "image": "/assets/img/f8.jpg", "number": "8" },
+    { "image": "/assets/img/f9.jpg", "number": "9" },
+    { "image": "/assets/img/r33.jpg", "number": "10" },
+    { "image": "/assets/img/v5.jpg", "number": "11" },
+    { "image": "/assets/img/it23.jpg", "number": "12" }
+  ]
+}

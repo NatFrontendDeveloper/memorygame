@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Spiel</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Memory Spiel</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="pairCount">Wählen Sie die Anzahl der Kartenpaare:</label>
+
+            <select id="pairCount">
+                <option value="2">2 Paar</option>
+                <option value="3">3 Paar</option>
+                <option value="4">4 Paar</option>
+                <option value="5">5 Paar</option>
+                <option value="6">6 Paar</option>
+                <option value="7">7 Paar</option>
+                <option value="8">8 Paar</option>
+                <option value="9">9 Paar</option>
+                <option value="10">10 Paar</option>
+                <option value="11">11 Paar</option>
+                <option value="12">12 Paar</option>
+            </select>
+            <select id="deckSelect">
+                <option value="cards_colors">Obst und Gemüser</option>
+                <option value="cards_animals">Nature und Tiere</option>
+                <option value="cards_laender">Städte und Länder</option>
+            </select>
+            <button id="startGame">Start</button>
+        </div>
+        <div class="main-container">
+            <div class="game-container">
+                <div id="memory-game"></div>
+            </div>
+            <div class="sidebar">
+                <h2>Statistic</h2>
+                <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Anzahl Kartenpaare</th>
+                            <th>Beste Zeit (sec)</th>
+                            <th>wie viele Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td><span id="bestTime_2">0</span></td>
+                            <td><span id="gamesPlayed_2">0</span></td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>3</td>
+                                <td><span id="bestTime_3">0</span></td>
+                                <td><span id="gamesPlayed_3">0</span></td>
+                            </tr>
+                            <td>4</td>
+                            <td><span id="bestTime_4">0</span></td>
+                            <td><span id="gamesPlayed_4">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>5 </td>
+                            <td><span id="bestTime_5">0</span></td>
+                            <td><span id="gamesPlayed_5">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><span id="bestTime_6">0</span></td>
+                            <td><span id="gamesPlayed_6">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><span id="bestTime_7">0</span></td>
+                            <td><span id="gamesPlayed_7">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><span id="bestTime_8">0</span></td>
+                            <td><span id="gamesPlayed_8">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><span id="bestTime_9">0</span></td>
+                            <td><span id="gamesPlayed_9">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><span id="bestTime_10">0</span></td>
+                            <td><span id="gamesPlayed_10">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><span id="bestTime_11">0</span></td>
+                            <td><span id="gamesPlayed_11">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><span id="bestTime_12">0</span></td>
+                            <td><span id="gamesPlayed_12">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+        <!-- <div id="clickCountDisplay">Количество нажатий: 0</div> -->
+        <div id="winModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <p id="winMessage"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/index.js" defer></script>
+</body>
+</html>
